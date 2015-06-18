@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		CA9586A91B32E7C000055C28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586A81B32E7C000055C28 /* main.m */; };
 		CA9586AC1B32E7C100055C28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586AB1B32E7C100055C28 /* AppDelegate.m */; };
-		CA9586AF1B32E7C100055C28 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586AE1B32E7C100055C28 /* ViewController.m */; };
 		CA9586B21B32E7C100055C28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9586B01B32E7C100055C28 /* Main.storyboard */; };
 		CA9586B41B32E7C100055C28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA9586B31B32E7C100055C28 /* Images.xcassets */; };
 		CA9586B71B32E7C100055C28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA9586B51B32E7C100055C28 /* LaunchScreen.xib */; };
 		CA9586C31B32E7C100055C28 /* iMoveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586C21B32E7C100055C28 /* iMoveTests.m */; };
+		CA9586CE1B32F3F200055C28 /* QuestionnaireViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586CD1B32F3F200055C28 /* QuestionnaireViewController.m */; };
+		CA9586D41B32FAAD00055C28 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586D31B32FAAD00055C28 /* TabBarViewController.m */; };
+		CA9586D71B32FB0000055C28 /* RisksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586D61B32FB0000055C28 /* RisksViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +34,18 @@
 		CA9586A81B32E7C000055C28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CA9586AA1B32E7C100055C28 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CA9586AB1B32E7C100055C28 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CA9586AD1B32E7C100055C28 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CA9586AE1B32E7C100055C28 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CA9586B11B32E7C100055C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA9586B31B32E7C100055C28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CA9586B61B32E7C100055C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		CA9586BC1B32E7C100055C28 /* iMoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMoveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9586C11B32E7C100055C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9586C21B32E7C100055C28 /* iMoveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iMoveTests.m; sourceTree = "<group>"; };
+		CA9586CC1B32F3F200055C28 /* QuestionnaireViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionnaireViewController.h; sourceTree = "<group>"; };
+		CA9586CD1B32F3F200055C28 /* QuestionnaireViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionnaireViewController.m; sourceTree = "<group>"; };
+		CA9586D21B32FAAD00055C28 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		CA9586D31B32FAAD00055C28 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
+		CA9586D51B32FB0000055C28 /* RisksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RisksViewController.h; sourceTree = "<group>"; };
+		CA9586D61B32FB0000055C28 /* RisksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RisksViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +87,15 @@
 		CA9586A51B32E7C000055C28 /* iMove */ = {
 			isa = PBXGroup;
 			children = (
+				CA9586D51B32FB0000055C28 /* RisksViewController.h */,
+				CA9586D61B32FB0000055C28 /* RisksViewController.m */,
+				CA9586D21B32FAAD00055C28 /* TabBarViewController.h */,
+				CA9586D31B32FAAD00055C28 /* TabBarViewController.m */,
 				CA9586AA1B32E7C100055C28 /* AppDelegate.h */,
 				CA9586AB1B32E7C100055C28 /* AppDelegate.m */,
-				CA9586AD1B32E7C100055C28 /* ViewController.h */,
-				CA9586AE1B32E7C100055C28 /* ViewController.m */,
 				CA9586B01B32E7C100055C28 /* Main.storyboard */,
+				CA9586CC1B32F3F200055C28 /* QuestionnaireViewController.h */,
+				CA9586CD1B32F3F200055C28 /* QuestionnaireViewController.m */,
 				CA9586B31B32E7C100055C28 /* Images.xcassets */,
 				CA9586B51B32E7C100055C28 /* LaunchScreen.xib */,
 				CA9586A61B32E7C000055C28 /* Supporting Files */,
@@ -219,9 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA9586AF1B32E7C100055C28 /* ViewController.m in Sources */,
+				CA9586D41B32FAAD00055C28 /* TabBarViewController.m in Sources */,
 				CA9586AC1B32E7C100055C28 /* AppDelegate.m in Sources */,
+				CA9586CE1B32F3F200055C28 /* QuestionnaireViewController.m in Sources */,
 				CA9586A91B32E7C000055C28 /* main.m in Sources */,
+				CA9586D71B32FB0000055C28 /* RisksViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

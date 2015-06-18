@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  QuestionnaireViewController.h
 //  iMove
 //
 //  Created by Barros, Myles V. on 6/18/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface QuestionnaireViewController : UIViewController
 
 @end
-
