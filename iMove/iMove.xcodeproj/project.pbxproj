@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A208E901B332A8D001D038F /* Goals2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A208E8F1B332A8D001D038F /* Goals2ViewController.m */; };
 		CA9586A91B32E7C000055C28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586A81B32E7C000055C28 /* main.m */; };
 		CA9586AC1B32E7C100055C28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586AB1B32E7C100055C28 /* AppDelegate.m */; };
 		CA9586B21B32E7C100055C28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9586B01B32E7C100055C28 /* Main.storyboard */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A208E8E1B332A8D001D038F /* Goals2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Goals2ViewController.h; path = ../Goals2ViewController.h; sourceTree = "<group>"; };
+		0A208E8F1B332A8D001D038F /* Goals2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Goals2ViewController.m; path = ../Goals2ViewController.m; sourceTree = "<group>"; };
 		CA9586A31B32E7C000055C28 /* iMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9586A71B32E7C000055C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9586A81B32E7C000055C28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +90,8 @@
 		CA9586A51B32E7C000055C28 /* iMove */ = {
 			isa = PBXGroup;
 			children = (
+				0A208E8E1B332A8D001D038F /* Goals2ViewController.h */,
+				0A208E8F1B332A8D001D038F /* Goals2ViewController.m */,
 				CA9586D51B32FB0000055C28 /* RisksViewController.h */,
 				CA9586D61B32FB0000055C28 /* RisksViewController.m */,
 				CA9586D21B32FAAD00055C28 /* TabBarViewController.h */,
@@ -229,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A208E901B332A8D001D038F /* Goals2ViewController.m in Sources */,
 				CA9586D41B32FAAD00055C28 /* TabBarViewController.m in Sources */,
 				CA9586AC1B32E7C100055C28 /* AppDelegate.m in Sources */,
 				CA9586CE1B32F3F200055C28 /* QuestionnaireViewController.m in Sources */,
@@ -360,6 +366,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iMove/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -370,6 +377,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iMove/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -428,6 +436,7 @@
 				CA9586C81B32E7C100055C28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CA9586C91B32E7C100055C28 /* Build configuration list for PBXNativeTarget "iMoveTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +445,7 @@
 				CA9586CB1B32E7C100055C28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

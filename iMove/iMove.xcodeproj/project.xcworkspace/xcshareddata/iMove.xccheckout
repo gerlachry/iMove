@@ -5,23 +5,23 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A8FE0C4B-FEE1-4525-9785-35492CF82DF7</string>
+	<string>C8D31768-3EAF-4C3C-9D75-2A108266F90A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>iMove</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>8861B25589CE556AA292850034BF1D39D6ED1427</key>
-		<string>https://github.com/gerlachry/iMove</string>
+		<string>github.com:gerlachry/iMove.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iMove/iMove.xcodeproj/project.xcworkspace</string>
+	<string>iMove/iMove.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>8861B25589CE556AA292850034BF1D39D6ED1427</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/gerlachry/iMove</string>
+	<string>github.com:gerlachry/iMove.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

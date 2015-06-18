@@ -1,32 +1,22 @@
 //
-//  TabBarViewController.m
+//  testViewController.m
 //  iMove
 //
-//  Created by Barros, Myles V. on 6/18/15.
+//  Created by Gerlach, Ryan K on 6/18/15.
 //  Copyright (c) 2015 merck. All rights reserved.
 //
 
-#import "TabBarViewController.h"
-#import "RisksViewController.h"
+#import "testViewController.h"
 
-@interface TabBarViewController ()
+@interface testViewController ()
 
 @end
 
-@implementation TabBarViewController
+@implementation testViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     // Do any additional setup after loading the view.
-}
-
-- (void) viewDidAppear:(BOOL)animated {
-//    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//    
-//    RisksViewController *risksController =[storyboard instantiateViewControllerWithIdentifier:@"risks"];
-//    
-//    [self presentViewController:risksController animated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning {
