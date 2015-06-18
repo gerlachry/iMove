@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Landing Page-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController title="Landing Page" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -21,10 +21,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Questionnaire-->
         <scene sceneID="JhE-1X-bIB">
             <objects>
-                <viewController id="mC9-h5-Rga" sceneMemberID="viewController">
+                <viewController title="Questionnaire" id="mC9-h5-Rga" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OnW-Ua-0oS"/>
                         <viewControllerLayoutGuide type="bottom" id="TrX-df-Fop"/>
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="1376" y="387"/>
         </scene>
-        <!--Item 2-->
+        <!--Goals-->
         <scene sceneID="MvC-zP-hVA">
             <objects>
-                <viewController id="kf4-8l-a4s" sceneMemberID="viewController">
+                <viewController title="Goals" id="kf4-8l-a4s" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qap-5y-hNm"/>
                         <viewControllerLayoutGuide type="bottom" id="nkH-AL-xKp"/>
@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="2196" y="1621"/>
         </scene>
-        <!--Item-->
+        <!--Rewards-->
         <scene sceneID="cz4-XC-y8v">
             <objects>
-                <tableViewController id="fOC-iv-xhx" sceneMemberID="viewController">
+                <tableViewController title="Rewards" id="fOC-iv-xhx" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="42g-c0-VHW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,10 +85,10 @@
             </objects>
             <point key="canvasLocation" x="2196" y="2361"/>
         </scene>
-        <!--Item 1-->
+        <!--Dashboard-->
         <scene sceneID="cvl-Ba-Sii">
             <objects>
-                <viewController id="yJN-Q2-245" sceneMemberID="viewController">
+                <viewController title="Dashboard" id="yJN-Q2-245" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RbB-xE-sJX"/>
                         <viewControllerLayoutGuide type="bottom" id="CDS-A9-V1g"/>
