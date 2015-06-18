@@ -21,13 +21,14 @@
     // Do any additional setup after loading the view.
 }
 
+/*
 - (void) viewDidAppear:(BOOL)animated {
     UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
     RisksViewController *risksController =[storyboard instantiateViewControllerWithIdentifier:@"risks"];
     
     [self presentViewController:risksController animated:YES completion:NULL];
-}
+}*/
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
