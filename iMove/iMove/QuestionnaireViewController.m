@@ -34,4 +34,37 @@
 }
 */
 
+- (IBAction)submitRiskAssesment:(id)sender {
+    BOOL validForm = [self assessmentFormIsValid];
+    
+    if (validForm) {
+        // segue!
+    }
+    else {
+        self.alert.hidden = NO;
+        self.alertMessage.hidden = NO;
+    }
+}
+
+- (Boolean)assessmentFormIsValid {
+    if ([[self.age text] intValue] == 0) {
+        return NO;
+    }
+    else if ([[self.weight text] intValue] == 0) {
+        return NO;
+    }
+    else if ([[self.hdl text] intValue] == 0) {
+        return NO;
+    }
+    else if ([[self.ldl text] intValue] == 0) {
+        return NO;
+    }
+    else if ([[self.bloodPressure text] intValue] == 0) {
+        return NO;
+    }
+    
+    return YES;
+}
+
+
 @end
