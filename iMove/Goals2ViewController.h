@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Goals2ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *targetSteps;
-@property (weak, nonatomic) IBOutlet UILabel *targetDays;
-@property (weak, nonatomic) IBOutlet UILabel *totalDays;
+@interface Goals2ViewController : UITableViewController
+
+#define api_reward_url @"http://10.196.120.83:7777/v1/reward/0001-0002-0003-0004"
 
 @end
