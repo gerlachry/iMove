@@ -117,25 +117,6 @@
             </objects>
             <point key="canvasLocation" x="1171.2" y="2235.0799999999999"/>
         </scene>
-        <!--Dashboard-->
-        <scene sceneID="cvl-Ba-Sii">
-            <objects>
-                <viewController title="Dashboard" id="yJN-Q2-245" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yv9-3h-14D"/>
-                        <viewControllerLayoutGuide type="bottom" id="Dob-tN-qHq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lsT-iO-7zq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Dashboard" id="iKC-Z1-UBK"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jzr-FT-NOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1703" y="906"/>
-        </scene>
         <!--TabBar-->
         <scene sceneID="Ann-Zu-W4b">
             <objects>
@@ -147,7 +128,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="yJN-Q2-245" kind="relationship" relationship="viewControllers" id="hVZ-nC-6zc"/>
+                        <segue destination="m7N-BY-FkQ" kind="relationship" relationship="viewControllers" id="hVZ-nC-6zc"/>
                         <segue destination="fOC-iv-xhx" kind="relationship" relationship="viewControllers" id="umt-r0-1bT"/>
                         <segue destination="zrT-gI-PoH" kind="relationship" relationship="viewControllers" id="5gO-ny-KsB"/>
                     </connections>
@@ -216,7 +197,182 @@
             </objects>
             <point key="canvasLocation" x="1258" y="1576"/>
         </scene>
+        <!--Dashboard-->
+        <scene sceneID="ISf-P5-Kmy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m7N-BY-FkQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dashboard" id="iKC-Z1-UBK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KAT-Dv-IQd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rS4-D0-gUO" kind="relationship" relationship="rootViewController" id="iUm-pt-DTd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6RB-5s-8Ic" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1487" y="538"/>
+        </scene>
+        <!--Dashboard Table View Controller-->
+        <scene sceneID="Ies-bs-2aA">
+            <objects>
+                <tableViewController id="rS4-D0-gUO" customClass="DashboardTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="gV2-iS-dtE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="A5M-4H-q37">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NavigationCell" rowHeight="50" id="Dnx-iy-RWV" customClass="DashboardTableViewCell">
+                                        <rect key="frame" x="0.0" y="64" width="320" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dnx-iy-RWV" id="8cW-yC-f3D">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLg-AJ-UD4">
+                                                    <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                                    <state key="normal" title="Button" image="previous.jpg">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="previousDayButtonAction:" destination="rS4-D0-gUO" eventType="touchUpInside" id="yfc-Wk-2Ix"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UQ-C8-vBe">
+                                                    <rect key="frame" x="335" y="10" width="30" height="30"/>
+                                                    <state key="normal" title="Button" image="next.jpg">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="nextDayButtonAction:" destination="rS4-D0-gUO" eventType="touchUpInside" id="hUd-0m-Qmv"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="StepsCell" rowHeight="75" id="qsP-zI-AZi" customClass="DashboardTableViewCell">
+                                        <rect key="frame" x="0.0" y="114" width="320" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qsP-zI-AZi" id="fJM-CE-1Ra">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="steps.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="53Y-6C-8mo">
+                                                    <rect key="frame" x="8" y="12" width="50" height="50"/>
+                                                </imageView>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Dz-ZI-VXA">
+                                                    <rect key="frame" x="68" y="54" width="150" height="2"/>
+                                                    <color key="progressTintColor" red="0.15406515339999999" green="0.87791162950000001" blue="0.17520283070000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </progressView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qdi-EQ-Iw9">
+                                                    <rect key="frame" x="68" y="20" width="67" height="27"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="steps" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvL-a5-SWj">
+                                                    <rect key="frame" x="117" y="20" width="67" height="27"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="DistanceCell" rowHeight="75" id="s3P-Mh-nKk" customClass="DashboardTableViewCell">
+                                        <rect key="frame" x="0.0" y="189" width="320" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="s3P-Mh-nKk" id="CIR-Ip-nwA">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="distance.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="H94-OE-jOF">
+                                                    <rect key="frame" x="8" y="12" width="50" height="50"/>
+                                                </imageView>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fBA-dI-efX">
+                                                    <rect key="frame" x="68" y="54" width="150" height="2"/>
+                                                    <color key="progressTintColor" red="0.84161523650000003" green="0.24193623559999999" blue="0.87791162950000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                </progressView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9LW-r3-lGu">
+                                                    <rect key="frame" x="68" y="20" width="67" height="27"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="km" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qre-jG-Yh5">
+                                                    <rect key="frame" x="115" y="20" width="67" height="27"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="CaloriesCell" rowHeight="75" id="BVD-tP-2BJ" customClass="DashboardTableViewCell">
+                                        <rect key="frame" x="0.0" y="264" width="320" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BVD-tP-2BJ" id="cu8-Ef-0eK">
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="caloriesBurned.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AAo-Iq-qJt">
+                                                    <rect key="frame" x="8" y="12" width="50" height="50"/>
+                                                </imageView>
+                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="phi-uQ-hoJ">
+                                                    <rect key="frame" x="68" y="54" width="150" height="2"/>
+                                                    <color key="progressTintColor" red="0.87791162950000001" green="0.48226049920000003" blue="0.13425420339999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                </progressView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMd-kR-hed">
+                                                    <rect key="frame" x="68" y="20" width="67" height="27"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="calories burned" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nr-59-fTI">
+                                                    <rect key="frame" x="114" y="20" width="97" height="27"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="13"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="rS4-D0-gUO" id="9eD-uA-HFP"/>
+                            <outlet property="delegate" destination="rS4-D0-gUO" id="e4b-nS-amE"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="caR-jX-Hkt"/>
+                    <connections>
+                        <outlet property="caloriesBurnedProgressView" destination="phi-uQ-hoJ" id="hZ2-Wc-XlF"/>
+                        <outlet property="caloriesBurnedValueLabel" destination="eMd-kR-hed" id="a49-Da-5pG"/>
+                        <outlet property="dashboardTableView" destination="gV2-iS-dtE" id="u36-fP-XAr"/>
+                        <outlet property="distanceProgressView" destination="fBA-dI-efX" id="jOo-5D-FHA"/>
+                        <outlet property="distanceValueLabel" destination="9LW-r3-lGu" id="x9q-7g-Lbl"/>
+                        <outlet property="stepsProgressView" destination="8Dz-ZI-VXA" id="I5A-DQ-yly"/>
+                        <outlet property="stepsValueLabel" destination="Qdi-EQ-Iw9" id="Dii-aV-L3l"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhC-Pw-PBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2181" y="725"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="caloriesBurned.jpg" width="134" height="128"/>
+        <image name="distance.jpg" width="139" height="127"/>
+        <image name="next.jpg" width="256" height="256"/>
+        <image name="previous.jpg" width="256" height="256"/>
+        <image name="steps.jpg" width="130" height="128"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

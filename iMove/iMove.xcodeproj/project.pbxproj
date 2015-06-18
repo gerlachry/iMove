@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		0A208E901B332A8D001D038F /* Goals2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A208E8F1B332A8D001D038F /* Goals2ViewController.m */; };
 		0A9EE2C31B33723200FAE646 /* 1 Green Circle-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9EE2C21B33723200FAE646 /* 1 Green Circle-50.png */; };
+		0A9EE2C61B3382F200FAE646 /* DashboardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EE2C51B3382F200FAE646 /* DashboardTableViewController.m */; };
+		0A9EE2C91B3385AB00FAE646 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A9EE2C71B3385AB00FAE646 /* Main2.storyboard */; };
+		0A9EE2CF1B33865700FAE646 /* caloriesBurned.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A9EE2CA1B33865700FAE646 /* caloriesBurned.jpg */; };
+		0A9EE2D01B33865700FAE646 /* distance.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A9EE2CB1B33865700FAE646 /* distance.jpg */; };
+		0A9EE2D11B33865700FAE646 /* next.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A9EE2CC1B33865700FAE646 /* next.jpg */; };
+		0A9EE2D21B33865700FAE646 /* previous.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A9EE2CD1B33865700FAE646 /* previous.jpg */; };
+		0A9EE2D31B33865700FAE646 /* steps.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A9EE2CE1B33865700FAE646 /* steps.jpg */; };
 		CA9586A91B32E7C000055C28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586A81B32E7C000055C28 /* main.m */; };
 		CA9586AC1B32E7C100055C28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586AB1B32E7C100055C28 /* AppDelegate.m */; };
 		CA9586B21B32E7C100055C28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9586B01B32E7C100055C28 /* Main.storyboard */; };
@@ -34,6 +41,14 @@
 		0A208E8E1B332A8D001D038F /* Goals2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Goals2ViewController.h; path = ../Goals2ViewController.h; sourceTree = "<group>"; };
 		0A208E8F1B332A8D001D038F /* Goals2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Goals2ViewController.m; path = ../Goals2ViewController.m; sourceTree = "<group>"; };
 		0A9EE2C21B33723200FAE646 /* 1 Green Circle-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1 Green Circle-50.png"; sourceTree = "<group>"; };
+		0A9EE2C41B3382F200FAE646 /* DashboardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DashboardTableViewController.h; sourceTree = "<group>"; };
+		0A9EE2C51B3382F200FAE646 /* DashboardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DashboardTableViewController.m; sourceTree = "<group>"; };
+		0A9EE2C81B3385AB00FAE646 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main2.storyboard; sourceTree = "<group>"; };
+		0A9EE2CA1B33865700FAE646 /* caloriesBurned.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = caloriesBurned.jpg; sourceTree = "<group>"; };
+		0A9EE2CB1B33865700FAE646 /* distance.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = distance.jpg; sourceTree = "<group>"; };
+		0A9EE2CC1B33865700FAE646 /* next.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = next.jpg; sourceTree = "<group>"; };
+		0A9EE2CD1B33865700FAE646 /* previous.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = previous.jpg; sourceTree = "<group>"; };
+		0A9EE2CE1B33865700FAE646 /* steps.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steps.jpg; sourceTree = "<group>"; };
 		CA9586A31B32E7C000055C28 /* iMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9586A71B32E7C000055C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9586A81B32E7C000055C28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +107,12 @@
 		CA9586A51B32E7C000055C28 /* iMove */ = {
 			isa = PBXGroup;
 			children = (
+				0A9EE2C71B3385AB00FAE646 /* Main2.storyboard */,
+				0A9EE2CA1B33865700FAE646 /* caloriesBurned.jpg */,
+				0A9EE2CB1B33865700FAE646 /* distance.jpg */,
+				0A9EE2CC1B33865700FAE646 /* next.jpg */,
+				0A9EE2CD1B33865700FAE646 /* previous.jpg */,
+				0A9EE2CE1B33865700FAE646 /* steps.jpg */,
 				0A9EE2C21B33723200FAE646 /* 1 Green Circle-50.png */,
 				0A208E8E1B332A8D001D038F /* Goals2ViewController.h */,
 				0A208E8F1B332A8D001D038F /* Goals2ViewController.m */,
@@ -102,6 +123,8 @@
 				CA9586AA1B32E7C100055C28 /* AppDelegate.h */,
 				CA9586AB1B32E7C100055C28 /* AppDelegate.m */,
 				CA9586B01B32E7C100055C28 /* Main.storyboard */,
+				0A9EE2C41B3382F200FAE646 /* DashboardTableViewController.h */,
+				0A9EE2C51B3382F200FAE646 /* DashboardTableViewController.m */,
 				CA9586CC1B32F3F200055C28 /* QuestionnaireViewController.h */,
 				CA9586CD1B32F3F200055C28 /* QuestionnaireViewController.m */,
 				CA9586B31B32E7C100055C28 /* Images.xcassets */,
@@ -217,10 +240,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9EE2D21B33865700FAE646 /* previous.jpg in Resources */,
 				CA9586B21B32E7C100055C28 /* Main.storyboard in Resources */,
+				0A9EE2D01B33865700FAE646 /* distance.jpg in Resources */,
 				CA9586B71B32E7C100055C28 /* LaunchScreen.xib in Resources */,
 				0A9EE2C31B33723200FAE646 /* 1 Green Circle-50.png in Resources */,
+				0A9EE2C91B3385AB00FAE646 /* Main2.storyboard in Resources */,
 				CA9586B41B32E7C100055C28 /* Images.xcassets in Resources */,
+				0A9EE2D11B33865700FAE646 /* next.jpg in Resources */,
+				0A9EE2CF1B33865700FAE646 /* caloriesBurned.jpg in Resources */,
+				0A9EE2D31B33865700FAE646 /* steps.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +269,7 @@
 			files = (
 				0A208E901B332A8D001D038F /* Goals2ViewController.m in Sources */,
 				CA9586D41B32FAAD00055C28 /* TabBarViewController.m in Sources */,
+				0A9EE2C61B3382F200FAE646 /* DashboardTableViewController.m in Sources */,
 				CA9586AC1B32E7C100055C28 /* AppDelegate.m in Sources */,
 				CA9586CE1B32F3F200055C28 /* QuestionnaireViewController.m in Sources */,
 				CA9586A91B32E7C000055C28 /* main.m in Sources */,
@@ -266,6 +296,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0A9EE2C71B3385AB00FAE646 /* Main2.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A9EE2C81B3385AB00FAE646 /* Base */,
+			);
+			name = Main2.storyboard;
+			sourceTree = "<group>";
+		};
 		CA9586B01B32E7C100055C28 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
