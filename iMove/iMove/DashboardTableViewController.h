@@ -39,6 +39,9 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *caloriesBurnedValueLabel;
 
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
+
 -(void) increaseStepsProgressValue;
 
 -(void) increaseDistanceProgressValue;

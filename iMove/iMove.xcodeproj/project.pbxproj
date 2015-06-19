@@ -15,6 +15,7 @@
 		3FE30EB31B332FE000063E88 /* next.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE30EB11B332FE000063E88 /* next.jpg */; };
 		3FE30EB41B332FE000063E88 /* previous.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3FE30EB21B332FE000063E88 /* previous.jpg */; };
 		3FE30EB71B3358E900063E88 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FE30EB61B3358E900063E88 /* MBProgressHUD.m */; };
+		3FE30EB91B33850700063E88 /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FE30EB81B33850700063E88 /* Main2.storyboard */; };
 		CA9586A91B32E7C000055C28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586A81B32E7C000055C28 /* main.m */; };
 		CA9586AC1B32E7C100055C28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586AB1B32E7C100055C28 /* AppDelegate.m */; };
 		CA9586B21B32E7C100055C28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9586B01B32E7C100055C28 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		3FE30EB21B332FE000063E88 /* previous.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = previous.jpg; sourceTree = "<group>"; };
 		3FE30EB51B3358E900063E88 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		3FE30EB61B3358E900063E88 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		3FE30EB81B33850700063E88 /* Main2.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main2.storyboard; path = ../../../../../Desktop/Main2.storyboard; sourceTree = "<group>"; };
 		CA9586A31B32E7C000055C28 /* iMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9586A71B32E7C000055C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9586A81B32E7C000055C28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				CA9586AA1B32E7C100055C28 /* AppDelegate.h */,
 				CA9586AB1B32E7C100055C28 /* AppDelegate.m */,
 				CA9586B01B32E7C100055C28 /* Main.storyboard */,
+				3FE30EB81B33850700063E88 /* Main2.storyboard */,
 				CA9586CC1B32F3F200055C28 /* QuestionnaireViewController.h */,
 				CA9586CD1B32F3F200055C28 /* QuestionnaireViewController.m */,
 				CA9586B31B32E7C100055C28 /* Images.xcassets */,
@@ -254,6 +257,7 @@
 				CA9586B71B32E7C100055C28 /* LaunchScreen.xib in Resources */,
 				CA9586B41B32E7C100055C28 /* Images.xcassets in Resources */,
 				3FE30EAE1B332D9E00063E88 /* caloriesBurned.jpg in Resources */,
+				3FE30EB91B33850700063E88 /* Main2.storyboard in Resources */,
 				3FE30EAF1B332D9E00063E88 /* distance.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
