@@ -27,6 +27,14 @@
 //    RisksViewController *risksController =[storyboard instantiateViewControllerWithIdentifier:@"risks"];
 //    
 //    [self presentViewController:risksController animated:YES completion:NULL];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"goal_days"] == nil) {
+        UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        RisksViewController *risksController = [storyboard instantiateViewControllerWithIdentifier:@"risks"];
+        [self presentViewController:risksController animated:YES completion:NULL];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuestionnaireViewController : UIViewController
+@interface QuestionnaireViewController : UIViewController<NSURLConnectionDelegate, UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UITextField *age;
+@property (weak, nonatomic) IBOutlet UITextField *weight;
+@property (weak, nonatomic) IBOutlet UISwitch *smokerState;
+@property (weak, nonatomic) IBOutlet UITextField *hdl;
+@property (weak, nonatomic) IBOutlet UITextField *ldl;
+@property (weak, nonatomic) IBOutlet UITextField *bloodPressure;
+
+@property (weak, nonatomic) IBOutlet UILabel *alert;
+@property (weak, nonatomic) IBOutlet UILabel *alertMessage;
+
+- (IBAction)submitRiskAssesment:(id)sender;
 
 @end
