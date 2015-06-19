@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "iMoveHelper.h"
 
 @interface DashboardTableViewController : UITableViewController
 
@@ -38,6 +38,8 @@
 @property (nonatomic) float caloriesBurnedProgressValue;
 
 @property (weak, nonatomic) IBOutlet UILabel *caloriesBurnedValueLabel;
+
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 
 -(void) increaseStepsProgressValue;
 

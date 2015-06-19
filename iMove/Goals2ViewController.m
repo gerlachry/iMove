@@ -7,6 +7,7 @@
 //
 
 #import "Goals2ViewController.h"
+#import "iMoveHelper.h"
 
 @interface Goals2ViewController ()
 @property (nonatomic, strong) NSArray *goal;

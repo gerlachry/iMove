@@ -14,6 +14,7 @@
     NSMutableData *webData;
     NSMutableDictionary *dataForEachDate;
     float steps;
+    NSArray *responseResultsArray;
 }
 
 @end
@@ -45,11 +46,12 @@
 
 -(void) getDashboardData
 {
-    NSString *requestURLString = [NSString stringWithFormat:@"http://10.196.120.83:7777/v1/data/0001-0002-0003-0004"];
+    //NSString *requestURLString = [NSString stringWithFormat:@"http://54.175.137.37:7777/v1/data/0001-0002-0003-0004"];
+    //NSString *requestURLString = [NSString stringWithFormat:api_dashboard_url];
     
     // NSString *requestURLString = [NSString stringWithFormat:@"%@/%@",kOutsidePartiesSearchAPIURL, searchText];
     
-    NSURL *requestURL = [NSURL URLWithString:[requestURLString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSURL *requestURL = [NSURL URLWithString:[api_dashboard_url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:requestURL];
     
@@ -75,7 +77,7 @@
     NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
     NSString *errorMessage = [NSString stringWithFormat:@"Error Code:%ld. Please retry",(long)[httpResponse statusCode]];
     
-    
+    NSLog(@"%@", httpResponse);
     if ([httpResponse statusCode] >= 400)
     {
         // do error handling here
@@ -126,81 +128,74 @@
     
     // NSDictionary *responseDictionary = [json objectForKey:@"result"];
     
-    NSArray *responseResultsArray = [json objectForKey:@"result"];  //[NSArray arrayWithObject:responseDictionary];
+    responseResultsArray = [json objectForKey:@"result"];  //[NSArray arrayWithObject:responseDictionary];
     
     NSLog(@"responseResultsArray size %lu",(unsigned long)[responseResultsArray count] );
     
+    
     //  NSLog(@"responseResultsArray %@",responseResultsArray );
     
+    [self getDataForAllDates:responseResultsArray index:1];
+    
+    
+}
+
+-(void)getDataForAllDates:(NSArray *)resultsArray index:(NSInteger)arrayIndex
+{
     dataForEachDate = [[NSMutableDictionary alloc] init];
     
     NSString *currentDate;
     
+    NSLog(@" Index : %ld",(long)arrayIndex);
     
-    for (int i=0; i<[responseResultsArray count]; i++)
-    {
-        
-        NSLog(@" i[%d] : %@",i,[responseResultsArray objectAtIndex:i]);
-        
-        if([[[responseResultsArray objectAtIndex:i] objectForKey:@"date"] isEqualToString:@"19-Jun-2015"])
-        {
-            currentDate = @"19-Jun-2015";
-            
-            [dataForEachDate setValue:[responseResultsArray objectAtIndex:i] forKey:@"19-Jun-2015"];
-        }
-        
-        else if([[[responseResultsArray objectAtIndex:i] objectForKey:@"date"] isEqualToString:@"20-Jun-2015"])
-        {
-            currentDate = @"20-Jun-2015";
-            
-            [dataForEachDate setValue:[responseResultsArray objectAtIndex:i] forKey:@"20-Jun-2015"];
-        }
-        
-        else if([[[responseResultsArray objectAtIndex:i] objectForKey:@"date"] isEqualToString:@"21-Jun-2015"])
-        {
-            currentDate = @"21-Jun-2015";
-            
-            [dataForEachDate setValue:[responseResultsArray objectAtIndex:i] forKey:@"21-Jun-2015"];
-        }
-        
-        // NSLog(@" i[%d] : %@",i,[[[responseResultsArray objectAtIndex:0] objectAtIndex:i] objectForKey:@"name"]);
-        // NSLog(@" i[%d] : %@",i,[[[responseResultsArray objectAtIndex:0] objectAtIndex:i] objectForKey:@"headquarter_city"]);
-        
-        
-    }
-    
-    /* NSArray *searchResultsArray = [NSArray array];
-     
-     searchResultsArray = [searchResultsDictionary objectForKey:@"results"];
-     
-     
-     NSLog(@"searchResultsArray size %lu",(unsigned long)[searchResultsArray count] );*/
-    
-    NSLog(@"jsonError  %@", jsonError);
-    
-    /*for (int i=0; i<[searchResultsArray count]; i++)
+    /* for (int i=arrayIndex; i<[resultsArray count]; i++)
      {
-     NSLog(@" i[%d] : %@",i,[[searchResultsArray objectAtIndex:i] objectForKey:@"Name"]);
-     }*/
-    /*
-     self.searchResults = [NSArray arrayWithArray:[responseResultsArray objectAtIndex:0]];
      
-     [self.searchResultsTableView reloadData];
+     // NSLog(@" i[%d] : %@",i,[resultsArray objectAtIndex:i]);
      
-     
-     
-     
-     
-     [MBProgressHUD hideHUDForView:self.view animated:YES];
-     
-     if([self.searchResults count] ==0)
+     if([[[resultsArray objectAtIndex:i] objectForKey:@"date"] isEqualToString:@"19-Jun-2015"])
      {
-     NSString *title = [NSString stringWithFormat:@"You Searched For : %@",self.searchBar.text];
-     NSString *message = @"No people results matching your search were found";
-     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:title message:message delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+     currentDate = @"19-Jun-2015";
      
-     [alert show];
+     [dataForEachDate setValue:[resultsArray objectAtIndex:i] forKey:@"19-Jun-2015"];
+     }
+     
+     else if([[[resultsArray objectAtIndex:i] objectForKey:@"date"] isEqualToString:@"20-Jun-2015"])
+     {
+     currentDate = @"20-Jun-2015";
+     
+     [dataForEachDate setValue:[resultsArray objectAtIndex:i] forKey:@"20-Jun-2015"];
+     }
+     
+     else if([[[resultsArray objectAtIndex:i] objectForKey:@"date"] isEqualToString:@"21-Jun-2015"])
+     {
+     currentDate = @"21-Jun-2015";
+     
+     [dataForEachDate setValue:[resultsArray objectAtIndex:i] forKey:@"21-Jun-2015"];
+     }
+     
+     // NSLog(@" i[%d] : %@",i,[[[responseResultsArray objectAtIndex:0] objectAtIndex:i] objectForKey:@"name"]);
+     // NSLog(@" i[%d] : %@",i,[[[responseResultsArray objectAtIndex:0] objectAtIndex:i] objectForKey:@"headquarter_city"]);
+     
+     
      }*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    currentDate = [[resultsArray objectAtIndex:arrayIndex] objectForKey:@"date"];
+    
+    self.dateLabel.text = currentDate;
+    
+    [dataForEachDate setValue:[resultsArray objectAtIndex:arrayIndex] forKey:currentDate];
+    
     
     NSLog(@" Data for %@ %@",currentDate, [dataForEachDate objectForKey:currentDate]);
     
@@ -285,28 +280,6 @@
     
 }
 
-/*
- -(void) increaseDistanceProgressValue
- {
- 
- self.distanceProgressValue = [[[dataForEachDate objectForKey:@"18-Jun-2015"]  objectForKey:@"distance"] floatValue];
- 
- self.distanceProgressView.progress  = self.distanceProgressValue;
- 
- 
- if(self.stepsProgressValue < 1.0f)
- 
- {
- 
- self.distanceProgressValue = self.distanceProgressValue + 0.1f;
- 
- self.distanceProgressView.progress = self.distanceProgressValue;
- 
- //   [self performSelector:@selector(increaseDistanceProgressValue) withObject:self afterDelay:0.3];
- 
- }
- }
- */
 
 -(void)showCaloriesBurnedWithProgress:(NSString *)currentDate
 
@@ -325,28 +298,7 @@
     
 }
 
-/*
- -(void) increaseCaloriesBurnedProgressValue
- {
- 
- self.caloriesBurnedProgressValue = [[[dataForEachDate objectForKey:@"18-Jun-2015"]  objectForKey:@"calories"] floatValue];
- 
- self.caloriesBurnedProgressView.progress  = self.caloriesBurnedProgressValue;
- 
- 
- if(self.caloriesBurnedProgressValue < 1.0f)
- 
- {
- 
- self.caloriesBurnedProgressValue = self.caloriesBurnedProgressValue + 0.5f;
- 
- self.caloriesBurnedProgressView.progress = self.caloriesBurnedProgressValue;
- 
- //   [self performSelector:@selector(increaseCaloriesBurnedProgressValue) withObject:self afterDelay:0.3];
- 
- }
- }
- */
+
 
 #pragma mark - Table view data source
 
@@ -388,12 +340,12 @@
 
 - (IBAction)previousDayButtonAction:(UIButton *)sender
 {
-    [self getDashboardData];
+    [self getDataForAllDates:responseResultsArray index:0];
 }
 
 - (IBAction)nextDayButtonAction:(UIButton *)sender
 {
-    [self getDashboardData];
+    [self getDataForAllDates:responseResultsArray index:2];
     
 }
 @end

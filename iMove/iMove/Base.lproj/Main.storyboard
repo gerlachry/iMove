@@ -252,6 +252,12 @@
                                                         <action selector="nextDayButtonAction:" destination="rS4-D0-gUO" eventType="touchUpInside" id="hUd-0m-Qmv"/>
                                                     </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzm-of-vuL">
+                                                    <rect key="frame" x="115" y="14" width="100" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -355,6 +361,7 @@
                         <outlet property="caloriesBurnedProgressView" destination="phi-uQ-hoJ" id="hZ2-Wc-XlF"/>
                         <outlet property="caloriesBurnedValueLabel" destination="eMd-kR-hed" id="a49-Da-5pG"/>
                         <outlet property="dashboardTableView" destination="gV2-iS-dtE" id="u36-fP-XAr"/>
+                        <outlet property="dateLabel" destination="tzm-of-vuL" id="TAt-ch-Aat"/>
                         <outlet property="distanceProgressView" destination="fBA-dI-efX" id="jOo-5D-FHA"/>
                         <outlet property="distanceValueLabel" destination="9LW-r3-lGu" id="x9q-7g-Lbl"/>
                         <outlet property="stepsProgressView" destination="8Dz-ZI-VXA" id="I5A-DQ-yly"/>
