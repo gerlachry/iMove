@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QuestionnaireViewController : UIViewController
+@interface QuestionnaireViewController : UIViewController<NSURLConnectionDelegate, UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *age;
 @property (weak, nonatomic) IBOutlet UITextField *weight;
