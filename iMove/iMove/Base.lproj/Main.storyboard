@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="F7q-tu-WxH">
-=======
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="F7q-tu-WxH">
->>>>>>> efb5fd780239c70319238e22c1f563a6e9b91254
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-<<<<<<< HEAD
-=======
         <!--Risks-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
@@ -261,19 +255,13 @@
             </objects>
             <point key="canvasLocation" x="708" y="458"/>
         </scene>
->>>>>>> efb5fd780239c70319238e22c1f563a6e9b91254
         <!--Goals-->
         <scene sceneID="MvC-zP-hVA">
             <objects>
                 <viewController title="Goals" id="kf4-8l-a4s" sceneMemberID="viewController">
                     <layoutGuides>
-<<<<<<< HEAD
                         <viewControllerLayoutGuide type="top" id="X9z-F9-58d"/>
                         <viewControllerLayoutGuide type="bottom" id="QqZ-Pb-PNV"/>
-=======
-                        <viewControllerLayoutGuide type="top" id="5xe-7u-eye"/>
-                        <viewControllerLayoutGuide type="bottom" id="Dmu-Uv-gxS"/>
->>>>>>> efb5fd780239c70319238e22c1f563a6e9b91254
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iw0-I5-oV5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
@@ -313,10 +301,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbd-fR-yke" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="919" y="1651"/>
-=======
-            <point key="canvasLocation" x="1171.2" y="2235.0799999999999"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="cvl-Ba-Sii">
@@ -336,7 +321,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jzr-FT-NOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1171.2" y="906.90666666666664"/>
->>>>>>> efb5fd780239c70319238e22c1f563a6e9b91254
         </scene>
         <!--TabBar-->
         <scene sceneID="Ann-Zu-W4b">
