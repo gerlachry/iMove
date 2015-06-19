@@ -30,6 +30,11 @@
 		0A9EE2D21B33865700FAE646 /* previous.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A9EE2CD1B33865700FAE646 /* previous.jpg */; };
 		0A9EE2D31B33865700FAE646 /* steps.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A9EE2CE1B33865700FAE646 /* steps.jpg */; };
 		0A9EE2D61B33F93300FAE646 /* iMoveHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EE2D51B33F93300FAE646 /* iMoveHelper.m */; };
+		CA3F05C21B341438002EB91D /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3F05BF1B341438002EB91D /* Cell.m */; };
+		CA3F05C31B341438002EB91D /* CustomCellBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3F05C11B341438002EB91D /* CustomCellBackground.m */; };
+		CA3F05C61B341440002EB91D /* RewardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3F05C51B341440002EB91D /* RewardsViewController.m */; };
+		CA3F05C91B341448002EB91D /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3F05C81B341448002EB91D /* testViewController.m */; };
+		CA3F05CB1B341466002EB91D /* images in Resources */ = {isa = PBXBuildFile; fileRef = CA3F05CA1B341466002EB91D /* images */; };
 		CA9586A91B32E7C000055C28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586A81B32E7C000055C28 /* main.m */; };
 		CA9586AC1B32E7C100055C28 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA9586AB1B32E7C100055C28 /* AppDelegate.m */; };
 		CA9586B21B32E7C100055C28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA9586B01B32E7C100055C28 /* Main.storyboard */; };
@@ -78,6 +83,15 @@
 		0A9EE2CE1B33865700FAE646 /* steps.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steps.jpg; sourceTree = "<group>"; };
 		0A9EE2D41B33F93300FAE646 /* iMoveHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iMoveHelper.h; sourceTree = "<group>"; };
 		0A9EE2D51B33F93300FAE646 /* iMoveHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iMoveHelper.m; sourceTree = "<group>"; };
+		CA3F05BE1B341438002EB91D /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		CA3F05BF1B341438002EB91D /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
+		CA3F05C01B341438002EB91D /* CustomCellBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCellBackground.h; sourceTree = "<group>"; };
+		CA3F05C11B341438002EB91D /* CustomCellBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCellBackground.m; sourceTree = "<group>"; };
+		CA3F05C41B341440002EB91D /* RewardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardsViewController.h; sourceTree = "<group>"; };
+		CA3F05C51B341440002EB91D /* RewardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RewardsViewController.m; sourceTree = "<group>"; };
+		CA3F05C71B341448002EB91D /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
+		CA3F05C81B341448002EB91D /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
+		CA3F05CA1B341466002EB91D /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		CA9586A31B32E7C000055C28 /* iMove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA9586A71B32E7C000055C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA9586A81B32E7C000055C28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -186,6 +200,15 @@
 				CA9586AA1B32E7C100055C28 /* AppDelegate.h */,
 				CA9586AB1B32E7C100055C28 /* AppDelegate.m */,
 				CA9586B01B32E7C100055C28 /* Main.storyboard */,
+				CA3F05CA1B341466002EB91D /* images */,
+				CA3F05C71B341448002EB91D /* testViewController.h */,
+				CA3F05C81B341448002EB91D /* testViewController.m */,
+				CA3F05C41B341440002EB91D /* RewardsViewController.h */,
+				CA3F05C51B341440002EB91D /* RewardsViewController.m */,
+				CA3F05BE1B341438002EB91D /* Cell.h */,
+				CA3F05BF1B341438002EB91D /* Cell.m */,
+				CA3F05C01B341438002EB91D /* CustomCellBackground.h */,
+				CA3F05C11B341438002EB91D /* CustomCellBackground.m */,
 				0A9EE2D41B33F93300FAE646 /* iMoveHelper.h */,
 				0A9EE2D51B33F93300FAE646 /* iMoveHelper.m */,
 				0A9EE2C41B3382F200FAE646 /* DashboardTableViewController.h */,
@@ -306,6 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A9EE2D21B33865700FAE646 /* previous.jpg in Resources */,
+				CA3F05CB1B341466002EB91D /* images in Resources */,
 				CA9586B21B32E7C100055C28 /* Main.storyboard in Resources */,
 				0A9EE2D01B33865700FAE646 /* distance.jpg in Resources */,
 				CA9586B71B32E7C100055C28 /* LaunchScreen.xib in Resources */,
@@ -338,8 +362,12 @@
 				0A9EE2C61B3382F200FAE646 /* DashboardTableViewController.m in Sources */,
 				CA9586AC1B32E7C100055C28 /* AppDelegate.m in Sources */,
 				CA9586CE1B32F3F200055C28 /* QuestionnaireViewController.m in Sources */,
+				CA3F05C91B341448002EB91D /* testViewController.m in Sources */,
+				CA3F05C61B341440002EB91D /* RewardsViewController.m in Sources */,
 				CA9586A91B32E7C000055C28 /* main.m in Sources */,
 				CA9586D71B32FB0000055C28 /* RisksViewController.m in Sources */,
+				CA3F05C31B341438002EB91D /* CustomCellBackground.m in Sources */,
+				CA3F05C21B341438002EB91D /* Cell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

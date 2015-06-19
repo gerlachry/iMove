@@ -15,6 +15,9 @@
     NSMutableDictionary *dataForEachDate;
     float steps;
     NSArray *responseResultsArray;
+    
+    int indexCount;
+    int currentIndex;
 }
 
 @end
@@ -135,7 +138,7 @@
     
     //  NSLog(@"responseResultsArray %@",responseResultsArray );
     
-    [self getDataForAllDates:responseResultsArray index:1];
+    [self getDataForAllDates:responseResultsArray index:0];
     
     
 }
@@ -147,6 +150,10 @@
     NSString *currentDate;
     
     NSLog(@" Index : %ld",(long)arrayIndex);
+    
+    currentIndex = arrayIndex;
+    
+    NSLog(@" currentIndex : %ld",(long)arrayIndex);
     
     /* for (int i=arrayIndex; i<[resultsArray count]; i++)
      {
@@ -188,35 +195,43 @@
     
     
     
-    
-    
-    currentDate = [[resultsArray objectAtIndex:arrayIndex] objectForKey:@"date"];
-    
-    self.dateLabel.text = currentDate;
-    
-    [dataForEachDate setValue:[resultsArray objectAtIndex:arrayIndex] forKey:currentDate];
-    
-    
-    NSLog(@" Data for %@ %@",currentDate, [dataForEachDate objectForKey:currentDate]);
-    
-    // NSLog(@"Steps %@", [[dataForEachDate objectForKey:@"18-Jun-2015"]  objectForKey:@"steps"]);
-    
-    
-    self.stepsValueLabel.text = [NSString stringWithFormat:@"%@",[[dataForEachDate objectForKey:currentDate]  objectForKey:@"steps"]];
-    // [self.dashboardTableView reloadData];
-    
-    self.distanceValueLabel.text = [NSString stringWithFormat:@"%@",[[dataForEachDate objectForKey:currentDate]  objectForKey:@"distance"]];
-    
-    self.caloriesBurnedValueLabel.text = [NSString stringWithFormat:@"%@",[[dataForEachDate objectForKey:currentDate]  objectForKey:@"calories"]];
-    
-    [self showStepsWithProgress:currentDate];
-    
-    [self showDistanceWithProgress:currentDate];
-    
-    
-    [self showCaloriesBurnedWithProgress:currentDate];
-    
-    
+    if(currentIndex>=0 && currentIndex<10)
+        
+    {
+        
+        currentDate = [[resultsArray objectAtIndex:currentIndex] objectForKey:@"date"];
+        
+        if ([currentDate isEqualToString:@"19-Jun-2015"])
+        {
+            self.dateLabel.text = @"Today";
+        }
+        else
+        {
+            self.dateLabel.text = currentDate;
+        }
+        [dataForEachDate setValue:[resultsArray objectAtIndex:currentIndex] forKey:currentDate];
+        
+        
+        NSLog(@" Data for %@ %@",currentDate, [dataForEachDate objectForKey:currentDate]);
+        
+        // NSLog(@"Steps %@", [[dataForEachDate objectForKey:@"18-Jun-2015"]  objectForKey:@"steps"]);
+        
+        
+        self.stepsValueLabel.text = [NSString stringWithFormat:@"%@",[[dataForEachDate objectForKey:currentDate]  objectForKey:@"steps"]];
+        // [self.dashboardTableView reloadData];
+        
+        self.distanceValueLabel.text = [NSString stringWithFormat:@"%@",[[dataForEachDate objectForKey:currentDate]  objectForKey:@"distance"]];
+        
+        self.caloriesBurnedValueLabel.text = [NSString stringWithFormat:@"%@",[[dataForEachDate objectForKey:currentDate]  objectForKey:@"calories"]];
+        
+        [self showStepsWithProgress:currentDate];
+        
+        [self showDistanceWithProgress:currentDate];
+        
+        
+        [self showCaloriesBurnedWithProgress:currentDate];
+        
+    }
     
 }
 
@@ -322,12 +337,6 @@
  return cell;
  }*/
 
-
-
-
-
-
-
 /*
  #pragma mark - Navigation
  
@@ -340,12 +349,15 @@
 
 - (IBAction)previousDayButtonAction:(UIButton *)sender
 {
-    [self getDataForAllDates:responseResultsArray index:0];
+    indexCount=--currentIndex;
+    
+    [self getDataForAllDates:responseResultsArray index:indexCount];
 }
 
 - (IBAction)nextDayButtonAction:(UIButton *)sender
 {
-    [self getDataForAllDates:responseResultsArray index:2];
+    indexCount=++currentIndex;
+    [self getDataForAllDates:responseResultsArray index:indexCount];
     
 }
 @end
